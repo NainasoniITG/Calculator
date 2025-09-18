@@ -14,26 +14,27 @@
   <div id="calculator">
     <input type="text" id="display" placeholder="0" style="width: 92%;" readonly>
     <div class="calculator-button">
-      <button class="special" onclick="clearDisplay()">AC</button>
+     <button class="special" onclick="clearDisplay()">AC</button>
       <button onclick="valueOperator('%')">%</button>
       <button onclick="deleteLast()"><i class="fa-solid fa-delete-left" style="font-size: 26px"></i></button>
-      <button class="operator" onclick="valueOperator('/')">/</button>
+      <button class="operator" onclick="valueOperator('-')">-</button>
+      <button class="operator" onclick="valueOperator('*')">x</button>
+      <button class="operator" onclick="valueOperator('+')">+</button>
       <button onclick="valueNumber('7')">7</button>
       <button onclick="valueNumber('8')">8</button>
       <button onclick="valueNumber('9')">9</button>
-      <button class="operator" onclick="valueOperator('*')">x</button>
       <button onclick="valueNumber('4')">4</button>
       <button onclick="valueNumber('5')">5</button>
       <button onclick="valueNumber('6')">6</button>
-      <button class="operator" onclick="valueOperator('-')">-</button>
       <button onclick="valueNumber('1')">1</button>
       <button onclick="valueNumber('2')">2</button>
       <button onclick="valueNumber('3')">3</button>
-      <button class="operator" onclick="valueOperator('+')">+</button>
-      <button onclick="valueNumber('0')">0</button>
       <button onclick="valueDot()" style="font-size: 26px">·</button>
+      <button onclick="valueNumber('0')">0</button>
+      <button class="operator" onclick="valueOperator('/')">/</button>
       <button onclick="calculateSquare()">x²</button>
-      <button onclick="calculateSqrt()"><i class="fa-solid fa-square-root-variable" style="font-size: 17px;"></i></button>
+      <button onclick="calculateSqrt()"><i class="fa-solid fa-square-root-variable"
+          style="font-size: 17px;"></i></button>
       <button onclick="calculate()">=</button>
     </div>
   </div>
@@ -42,3 +43,4 @@
 
 
 </html>
+
