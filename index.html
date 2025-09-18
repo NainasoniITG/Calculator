@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../calculator/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display" placeholder="0" style="width: 92%;" readonly>
+    <div class="calculator-button">
+      <button class="special" onclick="clearDisplay()">AC</button>
+      <button onclick="valueOperator('%')">%</button>
+      <button onclick="deleteLast()"><i class="fa-solid fa-delete-left" style="font-size: 26px"></i></button>
+      <button class="operator" onclick="valueOperator('/')">/</button>
+      <button onclick="valueNumber('7')">7</button>
+      <button onclick="valueNumber('8')">8</button>
+      <button onclick="valueNumber('9')">9</button>
+      <button class="operator" onclick="valueOperator('*')">x</button>
+      <button onclick="valueNumber('4')">4</button>
+      <button onclick="valueNumber('5')">5</button>
+      <button onclick="valueNumber('6')">6</button>
+      <button class="operator" onclick="valueOperator('-')">-</button>
+      <button onclick="valueNumber('1')">1</button>
+      <button onclick="valueNumber('2')">2</button>
+      <button onclick="valueNumber('3')">3</button>
+      <button class="operator" onclick="valueOperator('+')">+</button>
+      <button onclick="valueNumber('0')">0</button>
+      <button onclick="valueDot()" style="font-size: 26px">·</button>
+      <button onclick="calculateSquare()">x²</button>
+      <button onclick="calculateSqrt()"><i class="fa-solid fa-square-root-variable" style="font-size: 17px;"></i></button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+    <script src="../calculator/style.js"></script>
+</body>
+
+</html>
